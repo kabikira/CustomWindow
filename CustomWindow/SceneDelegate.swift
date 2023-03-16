@@ -8,15 +8,15 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-    var customWindow: CustomWindow?
+    var showStartup: ShowStartup?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
-        self.customWindow = CustomWindow()
-        self.customWindow?.showRoot(window: window)
+        self.showStartup = ShowStartup()
+        self.showStartup?.showRoot(window: window)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

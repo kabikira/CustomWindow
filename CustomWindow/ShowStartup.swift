@@ -8,7 +8,7 @@
 import UIKit
 
 
-class CustomWindow {
+class ShowStartup {
     private var window: UIWindow?
     
     func showRoot(window: UIWindow?) {
